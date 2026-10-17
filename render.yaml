@@ -1,0 +1,25 @@
+# ============================================================
+#  Despliegue del BACKEND (FastAPI) de OdontoSoft en Render
+#  Blueprint: crea un servicio web Python desde la carpeta backend/.
+# ============================================================
+services:
+  - type: web
+    name: odontosoft-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: MONGO_URL          # Pega aquí la cadena de conexión de MongoDB Atlas
+        sync: false
+      - key: DATABASE_NAME
+        value: base_Odontosoft
+      - key: SECRET_KEY         # Clave secreta para los tokens JWT (defínela en Render)
+        sync: false
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "60"

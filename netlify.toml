@@ -1,0 +1,15 @@
+# ============================================================
+#  Despliegue del FRONTEND de OdontoSoft en Netlify
+#  La raíz del repositorio es la carpeta OdontoSoft/.
+#  Netlify publica el contenido de la carpeta frontend/.
+# ============================================================
+[build]
+  publish = "frontend"
+  command = ""
+
+# Cabeceras básicas de seguridad
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
