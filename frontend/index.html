@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OdontoSoft · Iniciar sesión</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-card">
+      <div class="login-logo">🦷</div>
+      <h1>OdontoSoft</h1>
+      <p class="sub">Sistema de gestión odontológica</p>
+      <div class="login-error" id="err"></div>
+      <form id="loginForm">
+        <div class="field" style="margin-bottom:14px">
+          <label>Correo</label>
+          <input type="email" id="correo" placeholder="usuario@odontosoft.com" required autofocus>
+        </div>
+        <div class="field" style="margin-bottom:20px">
+          <label>Contraseña</label>
+          <input type="password" id="password" placeholder="••••••••" required>
+        </div>
+        <button class="btn" type="submit" style="width:100%;padding:11px">Ingresar</button>
+      </form>
+      <div class="demo-hint">
+        <b>Usuarios de prueba:</b><br>
+        Odontóloga — odontologa@odontosoft.com / Odonto123<br>
+        Recepcionista — recepcion@odontosoft.com / Recepcion123<br>
+        Administrador — admin@odontosoft.com / Admin123
+      </div>
+    </div>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
