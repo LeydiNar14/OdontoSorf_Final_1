@@ -22,8 +22,8 @@ Todas las ramas se integran (merge) sobre `main`.
 | Recurso | Enlace |
 |---|---|
 | Repositorio Git | https://github.com/LeydiNar14/OdontoSorf_Final_1 |
-| Frontend (Netlify) | `(https://odontosoft1.netlify.app/)` |
-| Backend / API (Render) | `https://odontosoft-api-d44f.onrender.com/index.html` |
+| Frontend (Netlify) | https://odontosoft1.netlify.app/|
+| Backend / API (Render) | https://odontosoft-api-d44f.onrender.com/index.html |
 
 ---
 
